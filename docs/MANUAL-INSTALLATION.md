@@ -1,16 +1,22 @@
 # React Hello World
 
-1) Create a new NPM Package
-```sh
+1. Create a new NPM Package
+
+```
+sh
 $ npm init -Y
 ```
-2) Add the webpack module bundler
+
+2. Add the webpack module bundler
+
 ```sh
 $ npm install --save-dev webpack webpack-cli
 ```
-3) Create a webpack.config.js
+
+3. Create a webpack.config.js
 
 ```
+
 const path = require('path');
 
 module.exports = {
@@ -20,15 +26,22 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   }
 };
-```
-4) Install babel
 
-```sh
+```
+
+4. Install Babel
+
+```
+
+sh
 $ npm install --save-dev babel-core babel-loader babel-cli babel-preset-env
+
 ```
 
 Configure your webpack.config.js to use the babel loader
+
 ```
+
 const path = require('path');
 
 module.exports = {
@@ -43,10 +56,14 @@ module.exports = {
     ]
   }
 };
+
 ```
 
-Also configure your package.json to use the "env" and "react" presets.
-```json
+Also, configure your package.json to use the "env" and "react" presets.
+
+```
+
+json
   ...
   "babel":{
     "presets": [
@@ -55,14 +72,18 @@ Also configure your package.json to use the "env" and "react" presets.
     ]
   },
   ...
+
 ```
 
-5) Install react pnm libraries (react is just a library)
+5. Install React pnm libraries (React is just a library)
 
-```sh
+```
+
+sh
 npm install --save react react-dom
+
 ```
 
 ## Important note:
 
-If you want include Images, Fonts or any other types of files rather than JS you will have to add the loaders into the webpack.config.js and install the respective npm packages (image-loader, style-loader, etc).
+If you want include images, fonts or any other types of files rather than JS you will have to add the loaders, set up the `webpack.config.js`, and install the respective npm packages (`image-loader`, `style-loader`, et cetera).

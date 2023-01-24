@@ -1,9 +1,14 @@
 import React from "react";
 
-import rigoImage from "../../img/rigo-baby.jpg";
+import favicon from "../../img/favicon.jpeg";
 
 const Home = () => {
-    return <div className="text-center">Hello React!</div>;
+    return (
+        <>
+            <img className="mx-0" src={favicon} />
+            <div className="text-center">Hello React!</div>
+        </>
+    );
 };
 
 export default Home;

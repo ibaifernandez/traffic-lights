@@ -2,17 +2,18 @@
 
 First make sure to choose your platform:
 
-## Deploying to Github pages:
+## Deploying to Github Pages:
 
-It's great for small projects that don't require your own domain or real use with users and growth, for example: Personal portfolio websites.
+It's great for small projects which don't require your own domain or real use with users and growth. For instance, personal portfolio websites.
 
-```sh
+```
+sh
 $ npm run deploy:github
 ```
 
-## Deploying to `Vercel` (recomended)
+## Deploying to `Vercel` (recommended)
 
 This hosting is ideal for production ready website and requires only two steps.
 
-- Create an account on vercel.com and come back to this tutorial.
-- After creating the account type on the command line: `$ vercel` and follow the steps.
+-   Create an account on vercel.com and come back to this tutorial.
+-   After creating the account, type on the command line: `$ vercel` and follow the steps.
