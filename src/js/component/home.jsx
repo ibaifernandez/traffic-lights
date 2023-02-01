@@ -36,6 +36,7 @@ const Home = () => {
 
     return (
         <>
+<<<<<<< HEAD
             <div className="traffic mx-auto bg-dark"></div>
             <div className="main-box mx-auto text-center bg-dark rounded-5 p-1">
                 {colors.map(({ id, color }) => (
@@ -45,6 +46,19 @@ const Home = () => {
                         onClick={() => setOn(id)}
                     ></div>
                 ))}
+=======
+            <img className="d-block my-3 mx-auto" src={favicon} />
+            <div className="text-center mx">
+                <span className="fs-6">
+                    If Font Awesome are active you should see a hand here 👉🏽{" "}
+                </span>
+                <i className="far fa-hand ms-3"></i>
+                <span className="mx-3 fs-3">Hello React!</span>
+                <i className="far fa-hand me-3"></i>
+                <span className="fs-6">
+                    👈🏽 If Font Awesome are active you should see a hand here{" "}
+                </span>
+>>>>>>> parent of 2d74d1a (Checking that Font Awesome Icons are duly installed)
             </div>
             <button
                 className="p-3 mt-3 d-flex mx-auto text-center"
